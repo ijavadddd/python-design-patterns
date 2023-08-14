@@ -51,6 +51,9 @@ class TableBuilder:
     def add_primary_key(self, column_name):
         self.table.set_primary_key(column_name)
 
+    def change_column_name(self, column_name, new_column_name):
+        raise NotImplementedError
+    
     def get_table(self):
         return self.table
 
